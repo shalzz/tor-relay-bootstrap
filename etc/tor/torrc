@@ -12,7 +12,8 @@
 
 
 ORPort 9001
-DirPort 9030
+DirPort 80
+#DirPortFrontPage /path/to/tor-exit-notice.html
 
 RelayBandwidthRate 30 MBytes
 RelayBandwidthBurst 100 MBytes
