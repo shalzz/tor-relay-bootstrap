@@ -12,8 +12,9 @@
 
 
 ORPort 9001
+#ORPort [your-ipv6-address]:9001
 DirPort 80
-#DirPortFrontPage /path/to/tor-exit-notice.html
+DirPortFrontPage /etc/tor/tor-exit-notice.html
 
 RelayBandwidthRate 30 MBytes
 RelayBandwidthBurst 100 MBytes
@@ -23,7 +24,9 @@ RelayBandwidthBurst 100 MBytes
 SocksPort 0
 SocksPolicy reject *
 
-ExitPolicy reject *:*
+ExitRelay 0
+IPv6Exit 0
+#ExitPolicy reject *:*
 
 Log notice file /var/log/tor/notices.log
 DataDirectory /var/lib/tor
