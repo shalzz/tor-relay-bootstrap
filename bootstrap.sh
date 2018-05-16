@@ -31,7 +31,7 @@ service tor stop
 
 # configure tor
 cp $PWD/etc/tor/torrc /etc/tor/torrc
-cp $PWD/etc/tor/tor-exit-notice.html /etc/tor/tor-exit-notice.html
+cp $PWD/etc/tor/notice.html /etc/tor/notice.html
 
 # configure firewall rules
 echo "== Configuring firewall rules"
